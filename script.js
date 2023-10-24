@@ -1,3 +1,4 @@
+/*
 // 1.
 const str = "nimi";
 const modStr = str[0].toUpperCase() + str.slice(1);
@@ -15,8 +16,8 @@ console.log(letter);
 
 // 4.
 const str4 = "Yhden yön tarinoita";
-const result = str4.replace("yön", "päivän");
-console.log(result);
+const resulta = str4.replace("yön", "päivän");
+console.log(resulta);
 
 // 5.
 function getLastLetters(str, a) {
@@ -34,3 +35,4 @@ for (let i=100; i >= 0; i--) {
         console.log("i = ", i)
     } 
 }
+*/
