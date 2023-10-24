@@ -42,3 +42,16 @@ function checkPalindrome(string) {
 const string = "Miau"
 
 checkPalindrome(string);
+
+// 6.
+let tekstii =
+`Numero 1
+Numero 2
+Numero 3
+Numero 4
+Numero 5
+Numero 6
+Numero 7
+Numero 8
+Numero 9
+Numero 10`;
