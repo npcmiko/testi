@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h2 id="instructions">Ohjeita</h2>
+    <p>
+      Kloonatkaa github repository https://github.com/joninordlund/teaching.git
+      johonkin kansioon.
+      <b>git clone https://github.com/joninordlund/teaching.git</b> . Sitten
+      menkää terminaalilla siihen kansioon ja poistakaa .git hakemisto
+      komennolla <b>rm -rf .git</b> Sen jälkeen kopioikaa koko kansio oman
+      projektikansionne alle.
+    </p>
+
+    <h2>Tehtävä 1.</h2>
+    <p>
+      Tehkää alla olevaan painonappiin toiminto, joka muuttaa napissa olevan
+      tekstin tekstiksi "pushed". Napin id on index.html -tiedostossa.
+      Avainsanat:
+      <b>getElementById, addEventlistener ja innerHTML</b>
+    </p>
+    <div>
+      <button id="pushed" onclick="miau()">not pushed</button>
+    </div>
+    <h2>Tehtävä 2.</h2>
+    <p>
+      Tehkää painonappeihin sellainen toiminto, että taustaväri muuttuu sen
+      väriseksi mitä napissa lukee. Lisätkää siis nappeihin eventListenerit,
+      joissa muutetaan body-tagin taustaväriä. Nappien id:t näkyvät index.html-
+      tiedostossa. Avainsanat:
+      <b
+        >getElementById, querySelector, addEventlistener, ja
+        style.backgroundColor</b
+      >.
+    </p>
+    <div>
+      <button id="greenBtn" onclick="moi()">Vihreä</button>
+      <button id="yellowBtn" onclick="moi2()">Keltainen</button>
+      <button id="whiteBtn" onclick="moi3()">Valkoinen</button>
+    </div>
+    <h2>Tehtävä 3.</h2>
+    <p>
+      EventListenerin käsittelyfunktioon tulee automaattisesti parametrinä
+      event-objekti. Tutkikaa sen sisältöä. Siellä on esim. clientX ja clientY,
+      joissa on hiiriosoittimen sen hetkiset koordinaatit. Tehkää
+      "mousemove"-eventListener body-tagiin ja tulostakaa hiiren x ja y
+      -koordinaatit konsoliin.
+    </p>
+
+    <h2>Tehtävä 4.</h2>
+    <p>
+      Tehkää alla oleviin div-tageihin 'click' eventHandelerit, joissa tekstin
+      väri vaihtuu -> "red" kun tekstiä klikkaa. Tageissa on kaikissa sama
+      class-name.
+    </p>
+    <div class="teksti" onclick="ok()">Hauki</div>
+    <div class="teksti">Silakka</div>
+    <div class="teksti">Ahven</div>
+    <p>
+      eventHandlerin funktiossa mukana tuleva parametri event sisältää propertyn
+      'target', joka viittaa siihen elementtin josta event tuli. esim<br />
+      <code>function f(event) { event.target.style.background = "blue"}</code>,
+      jossa elementin, josta event tuli, taustaväri vaihtuu. Avainsanat
+      getElementsByClassName (palauttaa listan elementeistä, joilla on kyseinen
+      class ).
+    </p>
+
+    <h2>Tehtävä 5.</h2>
+    <>Lisätkää alla olevaan listaan seuraavat eläimet: hirvi, karhu, orava,
+    käärme, apina, norsu, hämähäkki.
+    <h3>Eläinlista</h3>
+    <ol id="animals">
+      <li>siili</li>
+    </ol>
+
+    <p>
+      Tehkää eläimistä ensin array. Sitten käykää se for tai forEach -silmukalla
+      läpi ja lisätkää ol-tagiin li-tag jokaista eläintä kohti. Lisätkää eläimen
+      nimi listaan käyttämällä innerHTML:ää. Avainsanat:
+      <b>createElement, appendChild ja innerHTML</b>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
